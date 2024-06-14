@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+   background-color: #333;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    row-gap:10px;
+}
+.pagination a {
+    color: #4CAF50;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.pagination a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+@media (max-width: 600px) {
+    .pagination a {
+        padding: 6px 12px;
+        margin: 0 2px;
+    }
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+    background-color: #e9f7fe;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /* margin: 10px; */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.stroke {
+ text-decoration: line-through;
+ opacity: 0.6;
+}
+
+.toggleButtons {
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
